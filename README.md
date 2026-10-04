@@ -1,31 +1,52 @@
-# 🔍 Bangla-REX Explorer
+# Bangla Relation Extraction System 🇧🇩
 
-## Bengali Relation Extraction System using BanglaBERT
+**Semantic Relation Extraction from Bangla Text using Deep Learning**
 
-### 📌 Overview
-Bangla-REX Explorer is a complete web application for extracting semantic relations from Bengali text. It uses a fine-tuned BanglaBERT model to identify 7 types of relations between entities in Bengali sentences.
+Bangla Relation Extraction System is an NLP-based application designed to extract semantic relations between entities in Bengali text using a Transformer-based deep learning model. It provides structured relation predictions with confidence scores through a FastAPI backend, supported by an interactive web interface.
 
-### 🎯 Features
-- **Real-time Analysis**: Instant relation extraction from Bengali text
-- **Bulk Processing**: Process multiple texts from Excel files
-- **Analytics Dashboard**: Visualize relation statistics
-- **Model Performance**: View evaluation metrics
-- **7 Relation Types**: Movie Actor, Director, Writer, Birth/Death Place, Company Founder/Location
+## 🚀 Features
 
-### 🚀 Technologies Used
-- **Backend**: FastAPI
-- **Frontend**: Streamlit
-- **Model**: BanglaBERT (Hugging Face Transformers)
-- **Deep Learning**: PyTorch
-- **Visualization**: Plotly
+* **Relation Extraction:** Identifies semantic relations between entities in Bengali text.
+* **Transformer-Based Model:** Uses a fine-tuned Transformer encoder for contextual understanding.
+* **Confidence Scores:** Displays confidence scores alongside predicted relations.
+* **REST API:** Exposes prediction functionality through FastAPI.
+* **Interactive Web Interface:** Provides a user-friendly interface for testing predictions.
+* **Deep Learning:** Uses PyTorch for model implementation and inference.
+* **Git LFS Support:** Manages large model files efficiently using Git Large File Storage.
 
-### 📊 Supported Relations
-1. Movie Actor (চলচ্চিত্র অভিনেতা)
-2. Movie Director (চলচ্চিত্র পরিচালক)
-3. Writer (লেখক)
-4. Place of Birth (জন্মস্থান)
-5. Place of Death (মৃত্যুস্থান)
-6. Company Founder (প্রতিষ্ঠাতা)
-7. Company Location (প্রতিষ্ঠানের অবস্থান)
+## 🛠️ Technologies Used
 
-### 📁 Project Structure
+| Technology                | Purpose                                   |
+| ------------------------- | ----------------------------------------- |
+| Python                    | Core programming language                 |
+| PyTorch                   | Deep learning and model inference         |
+| Hugging Face Transformers | Transformer model ecosystem               |
+| FastAPI                   | Backend API                               |
+| Uvicorn                   | ASGI server for FastAPI                   |
+| Streamlit / Flask         | Interactive web interface                 |
+| Pandas                    | Data processing                           |
+| Scikit-learn              | Machine learning utilities and evaluation |
+| Git LFS                   | Large file storage for model weights      |
+
+## 🏗️ Project Architecture
+
+```text
+User
+  |
+  v
+Web Interface
+  |
+  v
+FastAPI Backend
+  |
+  v
+Bangla Text Processing
+  |
+  v
+Transformer-Based Model
+  |
+  v
+Relation Classification Head
+  |
+  v
+Predicted Relations and Confidence Scores
